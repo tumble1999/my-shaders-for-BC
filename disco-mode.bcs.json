@@ -1,0 +1,7 @@
+{
+	"name":"DiscoMode",
+	"description":"Change color based on where the mouse is",
+	"shaderVersion":"0.1",
+	"author":"TumbleGamer",
+	"shader":"#version 300 es\\n    precision mediump float;\\n    \\n    in vec2 vPixelCoord;\\n    out vec4 fColor;\\n    \\n    uniform sampler2D uStageTex;\\n    uniform float uTime;\\n    uniform vec2 uViewportSize;\\n    uniform vec2 uMousePos;\\n    \\n    void main() {\\n        fColor = texture(uStageTex,vPixelCoord)*vec4(uMousePos/uViewportSize,1,1);\\n    }"
+}

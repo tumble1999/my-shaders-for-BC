@@ -1,0 +1,7 @@
+{
+	"name":"TestCard",
+	"description":"Color based on positon of pixels",
+	"shaderVersion":"0.1",
+	"author":"TumbleGamer",
+	"shader":"#version 300 es\\n    precision mediump float;\\n    \\n    in vec2 vPixelCoord;\\n    out vec4 fColor;\\n    \\n    void main() {\\n        fColor = vec4(vPixelCoord,.5,1);\\n    }"
+}
