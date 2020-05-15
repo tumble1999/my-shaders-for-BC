@@ -3,5 +3,5 @@
 	"description":"Shader with less blue",
 	"shaderVersion":"0.1",
 	"author":"TumbleGamer",
-	"shader":"#version 300 es\\nprecision mediump float;\\n\\nin vec2 vPixelCoord;\\nout vec4 fColor;\\n\\nuniform sampler2D uStageTex;\\n\\n#define INTENSITY 2.0\\n\\nvoid main() {\\n    fColor = texture(uStageTex,vPixelCoord)*vec4(1,1,1.0/INTENSITY,1.0);\\n}"
+	"shader":"#version 300 es\nprecision mediump float;\n\nin vec2 vPixelCoord;\nout vec4 fColor;\n\nuniform sampler2D uStageTex;\n\n#define INTENSITY 2.0\n\nvoid main() {\n    fColor = texture(uStageTex,vPixelCoord)*vec4(1,1,1.0/INTENSITY,1.0);\n}"
 }
